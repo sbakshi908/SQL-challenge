@@ -1,6 +1,6 @@
-# Employee Database: A Mystery in Two Parts
+# SQL Homework - Employee Database: A Mystery in Two Parts
 
-![sql.png](sql.png)
+
 
 ## Background
 
@@ -14,36 +14,18 @@ In this assignment, you will design the tables to hold data in the CSVs, import 
 
 Note: You may hear the term "Data Modeling" in place of "Data Engineering," but they are the same terms. Data Engineering is the more modern wording instead of Data Modeling.
 
-### Before You Begin
+## Pre_reqs:
+6 csv files with employee data: employees.csv,titles.csv,salaries.csv,dept_emp.csv,departments.csv,dept_manager.csv.
 
-1. Create a new repository for this project called `sql-challenge`. **Do not add this homework to an existing repository**.
+## Steps Takes
 
-2. Clone the new repository to your computer.
+First in order to create the schema, used ER diagram on [http://www.quickdatabasediagrams.com]. Thie diagrams are created based on the relationship found between the CSV files (which are primary, foreign keys, etc).
 
-3. Inside your local git repository, create a directory for the SQL challenge. Use a folder name to correspond to the challenge: **EmployeeSQL**.
+the result is exported in schema format and executed to posgres to create the relevant tables
 
-4. Add your files to this folder.
+Once the empty tables are avaiable, import the CSV's in following order: titles.csv, departments.csv, employees.csv, dept_emp.csv, dept_manager.csv and salaries.csv
 
-5. Push the above changes to GitHub.
-
-## Instructions
-
-#### Data Modeling
-
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
-
-#### Data Engineering
-
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
-
-  * For the primary keys check to see if the column is unique, otherwise create a [composite key](https://en.wikipedia.org/wiki/Compound_key). Which takes to primary keys in order to uniquely identify a row.
-  * Be sure to create tables in the correct order to handle foreign keys.
-
-* Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
-
-#### Data Analysis
-
-Once you have a complete database, do the following:
+Execure various queries to practice SQL synax,  and  joins. (questions are listed below, the answers can be found in employee_sql)
 
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
@@ -60,4 +42,5 @@ Once you have a complete database, do the following:
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
 
