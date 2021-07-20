@@ -25,7 +25,7 @@ the result is exported in schema format and executed to posgres to create the re
 
 Once the empty tables are avaiable, import the CSV's in following order: titles.csv, departments.csv, employees.csv, dept_emp.csv, dept_manager.csv and salaries.csv
 
-Execure various queries to practice SQL synax,  and  joins. (questions are listed below, the answers can be found in employee_sql)
+Execute various queries to practice SQL synax,  and  joins. (questions are listed below, the answers can be found in employee_sql)
 
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
